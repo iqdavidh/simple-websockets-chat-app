@@ -16,6 +16,8 @@ exports.handler = async event => {
     return { statusCode: 500, body: e.stack };
   }
   
+  console.log('event.connectionId********************',event.connectionId);
+  
   const apigwManagementApi = new AWS.ApiGatewayManagementApi({
     apiVersion: '2018-11-29',
     endpoint: event.requestContext.domainName + '/' + event.requestContext.stage
