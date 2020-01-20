@@ -1,3 +1,15 @@
+## simple-websockets-chat-app
+
+This fix  allows use the lambda websocket with WEBSOCKET
+
+The main changes are in the apigateway adding the send response as "$default" action with the same function in SendMesage function
+
+
+![Changes](cambiso_en_template.gif)
+
+![Use](prueba_test.gif)
+
+
 # simple-websockets-chat-app
 
 This is the code and template for the simple-websocket-chat-app.  There are three functions contained within the directories and a SAM template that wires them up to a DynamoDB table and provides the minimal set of permissions needed to run the app:
